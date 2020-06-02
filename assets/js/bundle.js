@@ -39,7 +39,7 @@
                 `https://aerodatabox.p.rapidapi.com/flights/${flightNumber}`, 
                 {
                     method: 'GET',
-                    mode: 'no-cors'
+                    mode: 'no-cors',
                     headers: {
                         "x-rapidapi-host": "aerodatabox.p.rapidapi.com",
                         "x-rapidapi-key": "e42ff4adadmsh861798578aacac0p196072jsna0f1bb9510c4",
