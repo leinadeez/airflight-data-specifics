@@ -46,7 +46,12 @@
                     }
                 })
             .then(response => {
-                flights = response.json()
+                if(response.status != 200) {
+                    alert(`Error! Code ${response.status}: ${response.statusText}`)
+                    document.getElementById('btnSubmit').removeAttribute('disabled')
+                } else {
+                    flights = response.json()
+                }                
             })
         } catch (error) {
             console.log(error)
